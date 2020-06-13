@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+		body{
+			background-image: url(image/kark.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			max-width:100%;
+		}
+			.button2{
+
+			max-width: 121px;
+			}
+			.button1{
+				height: 104px;
+			}
+			.carcul input {
+				    padding: 10px 17px;
+				        
+				        
+				        font-family:fantasy;
+				        color:#444e4d;
+			}
+			.carcul{
+				position: relative;
+                left: 38%;
+			}
+			.bb{
+				width: 102px;
+			}
+			.bd{
+				font-family: sans-serif;
+				color:#1a242b82;
+				    font-size: 2.5vw;
+                position: absolute;
+               top: 33%;
+			}
+			.uu{
+                  background-color:#39567b57;
+                   max-width: 217px;
+                   border-radius: 7px;
+                   text-align: center;
+			}
+			.textview{
+				width: 171px;
+			}
+			.us{
+				background-color:#FFFFFF;
+				 max-width: 160px; 
+				 padding:10px;
+				  border-radius:15px;
+				   color:black;
+			}
+			.uu input{
+				font-size: 22px;
+			}
+			.mm{
+				width: 47px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="carcul uu" style="">
+			<form name="form" >
+				<input class="textview" id="display" type="text" value="0" disabled>
+			</form>
+			<table>
+				<tr>
+					<td><input class="button clear-btn " id="c" type="button" value="c" ></td>
+					<td><input class="button mm clear-btn" id="ce" type="button" value="e"></td>
+					<td><input class="button operation mm" type="button" value="/"></td>
+					<td><input class="button operation mm" type="button" value="*"></td>
+				</tr>
+				<tr>
+					<td><input class="btn number" type="button" value="7"></td>
+					<td><input class="btn number" type="button" value="8"></td>
+					<td><input class="btn number" type="button" value="9"></td>
+					<td><input class="button operation mm" type="button" value="-" ></td>
+				</tr>
+				<tr>
+					<td><input class="btn number" type="button" value="4"></td>
+					<td><input class="btn number" type="button" value="5"></td>
+					<td><input class="btn number" type="button" value="6"></td>
+					<td><input class="button operation" type="button" value="+"></td>
+				</tr>
+				<tr>
+					<td><input class="btn number" type="button" value="1"></td>
+					<td><input class="btn number" type="button" value="2"></td>
+					<td><input class="btn number" type="button" value="3"></td>
+					<td rowspan="2">
+						<input id="result" class="button1  operation" type="button" value="="></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input class="btn number button2 bb" type="button" value="0" ></td>
+					<td><input class="button mm" id="decimel" type="button" value="."></td>
+				</tr>
+			</table>
+
+		</div>
+		<div class="page">
+			<div class="title bd">ПРАСТОЙ КАРКУЛЯТОР</div>
+		</div>
+		
+		</div>
+		
+	<script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="caicl.js" type="text/javascript"></script>
+	</body>
+</html>
